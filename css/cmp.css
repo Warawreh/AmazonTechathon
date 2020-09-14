@@ -37,11 +37,13 @@ html{
         margin-left: 17%;
         border:solid;
     }
-    .btn{
+    .btns{
         margin-right: 10%;
         float:right;
         margin-top:3%;
         width:70%;
+        height:auto;
+        min-height: 200px;
     }
     .sbtn{
         font-size:20px;
@@ -52,6 +54,7 @@ html{
         float:right;
         background-color: rgb(87, 177, 128);
         box-shadow: 3px 6px 6px gray;
+        margin-top:1%;
     }
     .sbtn:hover{
         background-color: rgb(142, 142, 143);
