@@ -1,4 +1,4 @@
-<!-- Todo : Check if admin -->
+<!-- ***Done Todo : Check if admin -->
 <?php
   require 'header.php';
   $admin_names = array("admin_master1","admin_mater2","admin_master3");
@@ -15,7 +15,7 @@
     exit();
   }
  ?>
- <!-- Todo : Create addcourse.inc.php to save course to the database -->
+ <!-- ***Done Todo : Create addcourse.inc.php to save course to the database -->
 </br></br></br></br>
 <!-- Adding Courses to the data base -->
 <span style="font-size:30px">Add Course</span></br></br>
@@ -42,7 +42,7 @@
 
 <!-- Adding Majors to the db -->
 <span style="font-size:30px">Add Major</span></br></br>
-<!-- Todo : Create addmajor.inc.php to save major to the database -->
+<!-- ***Done Todo : Create addmajor.inc.php to save major to the database -->
 <form method="post" action="includes/addmajor.inc.php">
   <!-- Major name -->
   <input type="text" placeholder="Major name" name="mname">
