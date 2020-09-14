@@ -7,13 +7,14 @@ html{
     width: 100%;
 }
 .b1{
+    
     width:300px;
     margin-right: 13%;
     float:right;
 }
 .b2{
     width:200px;
-    margin-left:20%;
+    margin-left:15%;
     float:left;
 }
     .sel {
@@ -55,4 +56,53 @@ html{
     .sbtn:hover{
         background-color: rgb(142, 142, 143);
         color: black;
+    }
+    
+    @media only screen and (max-width: 800px){
+        .b1{
+            width:30%;
+            margin-right: 12%;
+        }
+        .b2{
+            width:30%;
+            margin-left:8%;
+        }
+        .btns{
+            margin-right:  0;
+            width:100%;
+        }
+        .sbtn{
+            font-size:18px;
+            width:20vw;
+            height:10vh;
+        }
+        
+    }
+    @media only screen and (max-width: 420px){
+        .sbtn{
+            width:88vw;
+            font-size:20px;
+            margin-top: 10%;
+            margin-right: 8%;
+            margin-bottom: 10%;
+        }
+        .b1{
+            width:40%;
+            margin-right: 4%;
+        }
+        .b2{
+            width: 20%;
+            margin-left:25%;
+            margin-top:0;
+        }
+        .down{
+            margin-top: 20%;
+        }
+        .line{
+            width: 100%;
+            margin-left: 0;
+        }
+        html,body{
+            overflow-x: hidden;
+        }
     }
