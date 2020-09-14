@@ -121,31 +121,11 @@
         <div  id="CommentsBlock">
             
                 
-                    <h1 style="text-align: center">Comments</h1>
+                    
                 
 
 
-                <div class="ncomment mn">
-                    <br>
-                    <div class="uside">
-                    <laber style="font-weight: bold;">UserName : </laber><laber style="font-size:12px;">replied to alaa</laber>
-                    <div class="w">
-                    dd/mm/yyyy hh:mm:ss
-                </div>
-                </div>
-                    
-                    <div class="mainc">
-                        welcom to the arabic site 
-                    </div>
-                    <br>
-                    <div class="rightc">
-                    
-                    <i class="fas fa-thumbs-up" style="float:right;margin-left: 3%">()</i>
-                    <i class="fas fa-reply" style="float:right;margin-left: 3%"></i>
-                    <i class="fas fa-trash-alt" style="float:right;margin-left: 3%"></i>
-                    <i class="far fa-edit" style="float:right;margin-left: 3%"></i>
-                </div>
-                </div>
+                
                 
                 <div class="ncomment mn">
                     <br>
@@ -170,22 +150,7 @@
                 </div>
 
                 
-                <div class="ncomment ed">
-                    <br>
-                    <div class="uside">
-                    <laber style="font-weight: bold;">Edit your comment : </laber>
-                    
-                </div>
-                    
-                    <div class="mainc">
-                        <textarea class="earea"></textarea>
-                    </div>
-                    
-                    <div class="rightc">
-                    
-                        <button class="ebtn">Submit</button>
-                </div>
-                </div>
+                
                 
                 <div  class="rcomment re">
                     <br>
@@ -227,22 +192,7 @@
                 </div>
                        
                     
-                <div class="ncomment re">
-                    <br>
-                    <div class="uside">
-                    <laber style="font-weight: bold;">Replying to Username : </laber>
-                    
-                </div>
-                    
-                    <div class="mainc">
-                        <textarea class="earea"></textarea>
-                    </div>
-                    
-                    <div class="rightc">
-                    
-                        <button class="ebtn">Submit</button>
-                </div>
-                </div>
+                
 
                         
 
