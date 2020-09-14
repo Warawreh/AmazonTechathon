@@ -33,7 +33,7 @@
         </a>
     </div>
     <div id="menu">
-      
+
       <?php
         if($logged == true){
           echo '
@@ -42,7 +42,7 @@
           </a>
           ';
         }else{
-          echo '<a href="#"><div class="menubtn">تسجيل</div></a>';
+          echo '<a href="login.php" style="margin-right:20px;"><div class="menubtn">تسجيل</div></a>';
         }
        ?>
       <a href="index.php"><div class="menubtn">الرئيسية</div></a>
