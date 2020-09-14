@@ -1,5 +1,6 @@
 <!-- Todo : Check if admin -->
 <?php
+  
   $admin_names = ("admin_master1","admin_mater2","admin_master3");
   $cnt = count($admin_names);
   $is_admin = false;
