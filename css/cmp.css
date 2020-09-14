@@ -1,0 +1,58 @@
+html{
+    background-color: #f8f6e7;
+    font-family:'Tajwal',sans-serif;
+}
+.down{
+    margin-top:10em;
+    width: 100%;
+}
+.b1{
+    width:300px;
+    margin-right: 13%;
+    float:right;
+}
+.b2{
+    width:200px;
+    margin-left:20%;
+    float:left;
+}
+    .sel {
+        text-align: right;
+        width: 150px;
+        float:right;
+        margin: 10px;
+
+    }
+
+    .sel:focus {
+
+        min-width: 150px;
+
+        width: auto;
+
+    }    
+    .line{
+        width:70%;
+        margin-left: 17%;
+        border:solid;
+    }
+    .btn{
+        margin-right: 10%;
+        float:right;
+        margin-top:3%;
+        width:70%;
+    }
+    .sbtn{
+        font-size:20px;
+        width:15vw;
+        height:8.5vh;
+        margin-right: 10%;
+        margin-bottom: 7%;
+        float:right;
+        background-color: rgb(87, 177, 128);
+        box-shadow: 3px 6px 6px gray;
+    }
+    .sbtn:hover{
+        background-color: rgb(142, 142, 143);
+        color: black;
+    }
