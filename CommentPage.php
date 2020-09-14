@@ -128,7 +128,7 @@
                 <div class="ncomment mn">
                     <br>
                     <div class="uside">
-                    <laber style="font-weight: bold;">UserName :replied to alaa </laber>
+                    <laber style="font-weight: bold;">UserName : </laber><laber style="font-size:12px;">replied to alaa</laber>
                     <div class="w">
                     dd/mm/yyyy hh:mm:ss
                 </div>
