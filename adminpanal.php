@@ -1,6 +1,6 @@
 <!-- Todo : Check if admin -->
 <?php
-  
+
   $admin_names = ("admin_master1","admin_mater2","admin_master3");
   $cnt = count($admin_names);
   $is_admin = false;
@@ -14,11 +14,11 @@
     exit();
   }
  ?>
+ <!-- Todo : Create addcourse.inc.php to save course to the database -->
 
 <!-- Adding Courses to the data base -->
 <span style="font-size:30px">Add Course</span></br></br>
 
-<!-- Todo : Create addcourse.inc.php to save course to the database -->
 <form method="post" action="includes/addcourse.inc.php">
   <!-- Every course has an id from it's university -->
   <input autofocus type="text" placeholder="course id" name="cid">
@@ -36,3 +36,50 @@
 </form>
 
 <!-- ___________________________________________________ -->
+
+</br>
+
+<!-- Adding Majors to the db -->
+<span style="font-size:30px">Add Major</span></br></br>
+<!-- Todo : Create addmajor.inc.php to save major to the database -->
+<form method="post" action="includes/addmajor.inc.php">
+  <!-- Major name -->
+  <input type="text" placeholder="Major name" name="mname">
+
+  <!-- <Major University (currently only JU) -->
+  <select name="muni">
+    <option>Jordan University</option>
+  </select>
+  <!-- Major Facility -->
+  <select name="mfac">
+    <option>Arts</option>
+    <option>Business</option>
+    <option>Engineering</option>
+  </select>
+  <!-- Hours of the Majors -->
+  <input type="text" placeholder="Major hours" name="mhour">
+  </br></br>
+  <!-- Add courses of this major -->
+  <input name="mcourse" type="text" id="allcourse" style="width:100%">
+  <br>
+  <br>
+  <input type="text" id="added" placeholder="Course" style="width:30%">
+  <button type="button" onclick="AddCourse()">add</button>
+  </br> </br>
+  <button type="submit" name="major-submit">Save</button>
+</form>
+
+<script type="text/javascript">
+  function AddCourse(){
+    var current = document.getElementById("added").value;
+    document.getElementById("added").value = "";
+    if(document.getElementById("allcourse").value != "")document.getElementById("allcourse").value += '|';
+    if(current.substring(current.length - 1))current = current.substring(0,current.length - 1);
+    document.getElementById("allcourse").value += current;
+  }
+  document.getElementById('added').addEventListener('keyup', function(event) {
+      if (event.keyCode == 32) {
+          AddCourse();
+      }
+  });
+</script>
