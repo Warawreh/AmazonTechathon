@@ -1,6 +1,6 @@
 <?php
   //Todo : Convert from local db to server db when ready
-
+  //Todo : Find A font for the logo
   $servername = "localhost"; //servername
   $dbuname = "root";//db user name
   $dbpwd  = "";//db password
