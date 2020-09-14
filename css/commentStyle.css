@@ -1,0 +1,171 @@
+
+.down{
+    margin-top:5%;
+    height:auto;
+    min-height: 400px;
+    width:50%;
+    margin-left: 25%;
+}
+i:hover{
+background-color: rgb(41, 184, 231);
+}
+#header{
+    z-index: 2;
+}
+.re{
+    border-left: 3px solid brown;
+}
+.ed{
+    border-left: 3px solid lightblue;
+}
+.mn{
+    border-left: 3px solid black;
+}
+.ncomment{
+    z-index: 1;
+     box-shadow:  3px 3px 6px 6px gray;
+    width:75%;
+    height:auto;
+    min-height: 100px; 
+    margin-left:2%;
+    position: relative;
+    margin-bottom: 1%;
+    border-radius: 3px;
+}
+.rcomment{
+    z-index: 1;
+     box-shadow:  3px 3px 6px 6px gray;
+    width:75%;
+    height:auto;
+    min-height: 100px; 
+    margin-left:15%;
+    position: relative;
+    margin-bottom: 1%;
+    border-radius: 3px;
+}
+.mainc{
+    width:80%;
+    margin-left: 7%;
+    margin-right:5%;
+    margin-top:1%;
+    margin-bottom: 2%;
+}
+.uside{
+    margin-left:5%;
+    width:100%;
+}
+
+.rightc{
+    float:right;
+    width:20%; 
+    margin-right:2%;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+.earea{
+    width:90%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+.ebtn{
+    float:right;
+    width:70%;
+    height: 100%;
+    margin-right:2%;
+    
+}
+.sb{
+    margin-left: 35%;
+    width:25%;
+}
+.tsb{
+    width:100%;
+    height: 100px;
+}
+.bsb{
+    margin-left: 38%;
+    width:100px;
+    height: 50px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(41, 184, 231);
+}
+.w{
+    float:right; 
+    width:30%;
+    margin-right:2%;
+}
+@media only screen and (max-device-width: 1300px){
+    .down{
+        width:80%;
+        margin-left: 10%;
+    }
+    .w{
+        margin-right: 5%;
+    }
+}
+@media only screen and (max-device-width: 812px){
+    .down{
+        margin-top: 10%;
+        margin-left: 5%;
+        width:90%;
+    }
+    .ncomment{
+        margin-bottom: 3%;
+    }
+    .rcomment{
+        margin-bottom: 3%;
+        margin-left: 12%;
+    }
+    .sb{
+        width:50%;
+        margin-left: 23.5%;
+    }
+    .w{
+        margin-right: 5%;
+        width:50%;
+        text-align: right;
+    }
+}
+@media only screen and (max-device-width: 420px){
+    .down{
+        margin-left:0;
+        margin-top: 15%;
+        width:100%;
+    }
+    .ncomment{
+        width:90%;
+        margin-left: 2%;
+        min-height: 75px;
+    }
+    .rcomment{
+        width:90%;
+        margin-left: 2%;
+        min-height: 75px;
+    }
+    .rightc{
+        width:50%;
+    }
+    .uside{
+        font-size:16px;
+    }
+    .mn,.mainc{
+        margin-bottom: 2%;
+        font-size:16px;
+    }
+    .w{
+        display: none;
+    }
+    .earea{
+        width:80%;
+    }
+    .ebtn{
+        width:40%;
+    }
+    .sb{
+        margin-left: 10%;
+        width:80%;
+    }
+}
