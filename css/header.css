@@ -102,7 +102,7 @@ a {
 }
 /*For the mobiles and tablets*/
 @media only screen and (max-width: 990px) {
-	.menubtn {display: none;}
+	.menubtn {display: none !important;}
 	#logo span {font-size: 20px;}
 	#header {grid-template-columns: auto 70px;}
 	#ddmenu{
