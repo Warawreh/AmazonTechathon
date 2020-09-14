@@ -1,0 +1,25 @@
+/*Removing all the decoration from links*/
+a {
+	text-decoration: none;
+	color:black;
+}
+/*The main design of the headers*/
+#header {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100vw;
+    height: 60px;
+
+    /*giving area for all elements*/
+    display: grid;
+    grid-template-areas:"h i";
+	grid-template-columns: 304px auto;
+	grid-template-rows: 60px;
+
+	
+	background-color: white;
+	color: black !important;
+	border-bottom: solid 2px #72a1ff;
+}
