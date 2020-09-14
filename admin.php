@@ -1,7 +1,9 @@
+<!-- Todo : Check if admin -->
+
 <!-- Adding Courses to the data base -->
 <span style="font-size:30px">Add Course</span></br></br>
 
-<!-- Todo Create addcourse.inc.php to save course to the database -->
+<!-- Todo : Create addcourse.inc.php to save course to the database -->
 <form method="post" action="includes/addcourse.inc.php">
   <!-- Every course has an id from it's university -->
   <input autofocus type="text" placeholder="course id" name="cid">
