@@ -36,7 +36,7 @@
         if($logged == true){
           echo '
           <a href="profile.php?user='.$user_name.'" style="margin-right:25px;display:inline-block" style="margin-right:3%;">
-            <img style="display:inline-block" width="60px" height="60px" src="img/user.png">
+            <img class="menubtn" style="margin-top:0 !important;padding-top:0 !important;display:inline-block;width:60px !important;height:60px !important" src="img/user.png">
           </a>
           ';
         }else{
@@ -44,7 +44,7 @@
         }
        ?>
       <a href="index.php"><div class="menubtn">الرئيسية</div></a>
-      <a href="#"><div class="menubtn">نقاش</div></a>
+      <a href="commentMainPage.php"><div class="menubtn">نقاش</div></a>
       <a href="#"><div class="menubtn">مواد مقترحة</div></a>
       <?php
         if($logged == true){
@@ -74,7 +74,7 @@
            ?>
           </div>
           <a href="index.php">الرئيسية</a>
-          <a href="#">نقاش</a>
+          <a href="commentMainPage.php">نقاش</a>
           <a href="#">مواد مقترحة</a>
         </div>
       </div>
