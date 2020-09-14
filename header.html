@@ -6,14 +6,48 @@
 </head>
 <header>
 	<div id = "header">
-		<div id = "logo" style="font-size:24px;display:flex">
+		<div id = "logo">
         <a href="index.php">
           <img src="img/icon.png" width="60px" height="60px" alt="">
         </a>
         <a href="index.php">
-          <span style="font-family: 'Solway', serif;">
+          <span>
             University <br> Student Assistant
           </span>
         </a>
     </div>
+    <div id="menu">
+      <a href="#"><div class="menubtn">تسجيل</div></a>
+      <a href="#"><div class="menubtn">الرئيسية</div></a>
+      <a href="#"><div class="menubtn">نقاش</div></a>
+      <a href="#"><div class="menubtn">مواد مقترحة</div></a>
+
+      <div id = "ddmenu">
+        <button onclick="toggle()" id = "ddbtn">☰</button>
+        <div id="dropdown-content">
+          <div id = "uinfo">
+<!-- 
+            <a href="profile.php?user=<?php echo $user_name; ?>"><?php echo $user_name; ?></a>
+            <a href="includes/logout.inc.php">خروج</a>
+             -->
+            <a href="signup.php">انشاء حساب</a>
+            <a href="login.php">تسجيل دخول</a>
+          </div>
+          <a href="#">الرئيسية</a>
+          <a href="#">نقاش</a>
+          <a href="#">مواد مقترحة</a>
+        </div>
+      </div>
+    </div>
 </header>
+<script>
+  var current = false;
+  function toggle(){
+    if(current == false){
+      document.getElementById("dropdown-content").style.display = "block";
+    }else{
+      document.getElementById("dropdown-content").style.display = "none";
+    }
+    current = !current;
+  }
+</script>
