@@ -12,7 +12,7 @@
         <title>Discussion Page</title>
     </head>
     <script>
-    
+// Adding a new comment    
         $(document).ready(function() {
             $('#adding').submit(function(e){
                 e.preventDefault();
@@ -56,6 +56,7 @@
                         dataType: "html",
                         success: function (response) {
                             $("#CommentsBlock").html(response);
+//Hide any edit/reply boxes                            
                             $(".ANY").hide();
                         }
                     });
@@ -68,16 +69,60 @@
     
     
     </script>
+    <script>
+// Disabling the button while there is no current user OR the textarea is empty        
+        
+       $(document).ready(function(){
+           $('#txt').val('');
+           $('.mainB').prop('disabled', true);
+           <?php if(isset($_COOKIE["uname"])&& $_COOKIE["uname"]!="" ) { ?>
+                   $('txt').keyup(function(){
+                       if($.trim($('#txt').val()).replace(' ','') == ''){
+                        $('.mainB').prop('disabled', true);
+                        }else{
+                        $('.mainB').prop('disabled', false);
+                        }
+                   });
+           <?php } else { ?>
+               $('.mainB').prop('disabled', true);
+           <?php } ?>
+       });
+    </script>
+    
+    <script>
+// Loading the comments from the database
+    $(document).ready(function(){
+// get pageid
+    var p=0;
+    <?php 
+    if(isset($_GET['pid'])&&$_GET['pid']!=""){
+       $xx=$_GET['pid']; ?> 
+         p= '<?php echo $xx ;?> ';
+         console.log(p);
+    <?php } ?>
+    
+    $.ajax({
+        type: "GET",
+                url: "loadAllComments.php?pid="+p,
+                dataType: "html",
+                success: function (response) {
+                    $("#CommentsBlock").html(response);
+                    $(".ANY").hide();
+                }
+    });
+    });
+    
+    </script>    
     <body>
     
 
     <hr>
     <div class="down">
-        <div  style="background-color: white;">
+        <div  style="background-color: white;" id="CommentsBlock">
             
-                <div >
+                
                     <h1 style="text-align: center">Comments</h1>
-                </div>
+                
 
 
                 <div class="ncomment mn">
@@ -215,11 +260,11 @@
 
     <!-- THe submit form goes here -->
     <div class="sb">
-                    <form method="POST">
+            <form method="POST" id="adding">
                         <label>
                             <h2 style="text-align:center">Add Comment</h2>
-                            <textarea class="tsb"></textarea>
-                            <button class="bsb">Add</button>
+                            <textarea class="tsb" name="subject" id="txt"></textarea>
+                            <button class="bsb mainB">Add</button>
                         </label>
                     </form>
                 

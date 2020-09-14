@@ -89,9 +89,7 @@ background-color: rgb(41, 184, 231);
     height: 50px;
     font-size: 20px;
 }
-button:hover{
-    background-color: rgb(41, 184, 231);
-}
+
 .w{
     float:right; 
     width:30%;
