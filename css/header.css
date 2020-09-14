@@ -11,15 +11,97 @@ a {
 	left: 0;
     width: 100vw;
     height: 60px;
-
+    margin: 0;
+    padding:0;
     /*giving area for all elements*/
     display: grid;
     grid-template-areas:"h i";
 	grid-template-columns: 304px auto;
 	grid-template-rows: 60px;
 
-	
+
 	background-color: white;
 	color: black !important;
 	border-bottom: solid 2px #72a1ff;
+
+}
+/*The logo part design*/
+#logo {
+	display: flex;
+	height: 60px;
+    grid-area: h;
+    margin-left: 10px;
+}
+#logo span {
+	font-size: 24px;
+}
+/*The menu part design*/
+#menu {
+	grid-area: i;
+	padding: 0;
+	margin: 0;
+	direction:rtl;
+}
+.menubtn {
+	display: inline-block;
+    height: 40px;
+    width: 120px;
+    padding-top: 20px;
+    text-align: center;
+}
+.menubtn:hover{
+  background: #eaeaea;
+  cursor: pointer;
+}
+#ddmenu {
+	display: none;
+	grid-area: i;
+	margin-right: 10px; 
+	position: relative; 	
+    text-align: right;
+}
+#dropdown-content{
+	display: none;
+	position: fixed;
+    background-color: #f9f9f9;
+    min-width: 100vw;
+    top: 60px;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#ddbtn {
+	width: 60px;
+	height: 60px;
+	margin: 0px 0px 0px 5px;
+	background-color: 	#737270;
+    color: white;
+    font-size: 30px;
+    border: none;	
+}
+#dropdown-content a {
+	display: block;
+	color: #3c3939;
+	padding: 12px 16px;
+    text-decoration: none;
+}
+#uinfo {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    direction: rtl;
+}
+#uinfo a{
+	display: inline-block;
+}
+/*For the mobiles and tablets*/
+@media only screen and (max-width: 990px) {
+	.menubtn {display: none;}
+	#logo span {font-size: 20px;}
+	#header {grid-template-columns: auto 70px;}
+	#ddmenu{
+		display: inline-block;
+	}
 }
