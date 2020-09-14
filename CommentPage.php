@@ -118,7 +118,7 @@
 
     <hr>
     <div class="down">
-        <div  style="background-color: white;" id="CommentsBlock">
+        <div  id="CommentsBlock">
             
                 
                     <h1 style="text-align: center">Comments</h1>
@@ -130,7 +130,7 @@
                     <div class="uside">
                     <laber style="font-weight: bold;">UserName :replied to alaa </laber>
                     <div class="w">
-                    dd/mm/yyyy hh:mm:ssa
+                    dd/mm/yyyy hh:mm:ss
                 </div>
                 </div>
                     
@@ -152,7 +152,7 @@
                     <div class="uside">
                     <laber style="font-weight: bold;">UserName : </laber>
                     <div  class="w">
-                    dd/mm/yyyy hh:mm:ssa
+                    dd/mm/yyyy hh:mm:ss
                 </div>
                 </div>
                     
@@ -192,7 +192,7 @@
                     <div class="uside">
                     <laber style="font-weight: bold;">UserName : </laber>
                     <div class="w">
-                    dd/mm/yyyy hh:mm:ssa
+                    dd/mm/yyyy hh:mm:ss
                 </div>
                 </div>
                     
