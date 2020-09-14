@@ -1,4 +1,7 @@
 /*Removing all the decoration from links*/
+header{
+	font-family: 'Tajawal', sans-serif;
+}
 a {
 	text-decoration: none;
 	color:black;
