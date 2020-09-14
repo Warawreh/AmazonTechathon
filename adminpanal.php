@@ -1,21 +1,22 @@
 <!-- Todo : Check if admin -->
 <?php
-
-  $admin_names = ("admin_master1","admin_mater2","admin_master3");
+  require 'header.php';
+  $admin_names = array("admin_master1","admin_mater2","admin_master3");
   $cnt = count($admin_names);
-  $is_admin = false;
-  for($i = 0:$i < $cnt;$i++){
+  $is_admin = true;
+  for($i = 0;$i < $cnt;$i++){
     if($admin_names[$i] == $user_name){
       $is_admin = true;
     }
   }
+
   if(!$is_admin){
     header("Location: index.php");
     exit();
   }
  ?>
  <!-- Todo : Create addcourse.inc.php to save course to the database -->
-
+</br></br></br></br>
 <!-- Adding Courses to the data base -->
 <span style="font-size:30px">Add Course</span></br></br>
 
