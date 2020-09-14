@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
 <?php
 
   //Check if the current user is logged in the website
