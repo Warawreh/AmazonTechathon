@@ -31,11 +31,26 @@
         </a>
     </div>
     <div id="menu">
-      
-      <a href="#"><div class="menubtn">تسجيل</div></a>
-      <a href="#"><div class="menubtn">الرئيسية</div></a>
+
+      <?php
+        if($logged == true){
+          echo '
+          <a href="profile.php?user='.$user_name.'" style="margin-right:25px;display:inline-block" style="margin-right:3%;">
+            <img style="display:inline-block" width="60px" height="60px" src="img/user.png">
+          </a>
+          ';
+        }else{
+          echo '<a href="#"><div class="menubtn">تسجيل</div></a>';
+        }
+       ?>
+      <a href="index.php"><div class="menubtn">الرئيسية</div></a>
       <a href="#"><div class="menubtn">نقاش</div></a>
       <a href="#"><div class="menubtn">مواد مقترحة</div></a>
+      <?php
+        if($logged == true){
+          echo '<a href="includes/logout.inc.php"><div class="menubtn">خروج</div></a>';
+        }
+       ?>
 
       <div id = "ddmenu">
         <button onclick="toggle()" id = "ddbtn">☰</button>
@@ -58,7 +73,7 @@
               }
            ?>
           </div>
-          <a href="#">الرئيسية</a>
+          <a href="index.php">الرئيسية</a>
           <a href="#">نقاش</a>
           <a href="#">مواد مقترحة</a>
         </div>
