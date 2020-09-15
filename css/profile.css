@@ -13,7 +13,6 @@ body {
 	display: grid;
 	margin-left: 4vw;
 	margin-right: 4vw;
-	/* border: solid 1px gray; */
 	border-radius: 10px;
 	width: 90vw;
 	height: 200px;
@@ -30,7 +29,6 @@ body {
 #uimge{
 	grid-area: i;
 	text-align: center;
-	/* background-color: green; */
 }
 #udata{
 	padding-right: 50px;
@@ -42,7 +40,6 @@ body {
 		"univ"
 		"prof"
 		"hour";
-		/* background-color: yellow; */
 }
 #dataname{grid-area:name;}
 #datauniv{grid-area:univ;}
@@ -57,7 +54,6 @@ body {
 }
 #void{
 	grid-area:v;
-	/* background-color: blue; */
 }
 #udata div{padding: 12.5px;}
 #ccon {
@@ -66,7 +62,6 @@ body {
 	margin-top: 30px;
 	width: 90vw;
 	background-color: white;
-	/* border: solid 1px black; */
 	border-radius: 10px;
 	min-height: 500px;
 	padding: 1vw;
@@ -132,6 +127,5 @@ body {
 			"v";
 		grid-template-columns: 92vw;
 		grid-template-rows: 200px 200px 200px;
-	/* background-color: red; */
 	}
 }
