@@ -1,7 +1,9 @@
 html{
     background-color: #f8f6e7;
     font-family:'Tajwal',sans-serif;
+    margin: 0;
 }
+
 .down{
     margin-top:10em;
     width: 100%;
@@ -38,8 +40,9 @@ html{
         border:solid;
     }
     .btns{
-        margin-right: 10%;
-        float:right;
+        
+        display:block;
+        margin-left: 15%;
         margin-top:3%;
         width:70%;
         height:auto;
