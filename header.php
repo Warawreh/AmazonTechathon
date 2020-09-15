@@ -48,7 +48,7 @@
        ?>
       <a href="index.php"><div class="menubtn">الرئيسية</div></a>
       <a href="commentMainPage.php"><div class="menubtn">نقاش</div></a>
-      <a href="#"><div class="menubtn">مواد مقترحة</div></a>
+      <a href="calc.php"><div class="menubtn">مواد مقترحة</div></a>
       <?php
         if($logged == true){
           echo '<a href="includes/logout.inc.php"><div class="menubtn">خروج</div></a>';
@@ -78,7 +78,7 @@
           </div>
           <a href="index.php">الرئيسية</a>
           <a href="commentMainPage.php">نقاش</a>
-          <a href="#">مواد مقترحة</a>
+          <a href="calc.php">مواد مقترحة</a>
         </div>
       </div>
     </div>

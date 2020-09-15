@@ -25,7 +25,7 @@
         اعرف اهم المواد التي يجب عليك اختيارها لهذا الفصل باستخدام الية حساب متقدمة تعمل على ترديب المواد حسب اهميتها
         وضرورة اجتيازها خلال هذا الفصل
         </br>
-        <a class="btn" href="course_calculator.php" style="color:white;cursor:pointer">
+        <a class="btn" href="calc.php" style="color:white;cursor:pointer">
           ...المزيد
         </a>
       </span>
