@@ -20,10 +20,9 @@ html{
     float:left;
 }
     .sel {
-        text-align: right;
         width: 150px;
-        float:right;
         margin: 10px;
+        
 
     }
 
@@ -74,7 +73,7 @@ html{
             margin-left:8%;
         }
         .btns{
-            margin-right:  0;
+            margin-left:5%;
             width:100%;
         }
         .sbtn{
@@ -84,7 +83,7 @@ html{
         }
         
     }
-    @media only screen and (max-width: 420px){
+    @media only screen and (max-width: 425px){
         .sbtn{
             width:88vw;
             font-size:20px;
@@ -114,6 +113,16 @@ html{
     }
     @media only screen and (max-width: 360px){
         .b2{
-            margin-left:27%;
+            margin-left:18%;
         }
+        .sel{
+            width:100px;
+        }
+        .sel:focus {
+
+        min-width: 100px;
+
+        width: auto;
+
+    }
     }
