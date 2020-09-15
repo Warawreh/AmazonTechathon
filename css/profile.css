@@ -121,6 +121,7 @@ body {
 		padding-right: 50px;
 	}
 	#uinfo{
+		direction: ltr;
 		display: grid;
 		margin-left: 4vw;
 		margin-right: 4vw;
