@@ -33,7 +33,7 @@ require 'header.php';
     </head>
     <script>
     $(document).ready(function(){
-        $("#firstChoice").attr('selected',true);
+//        $("#firstChoice").attr('selected',true);
         $.ajax({
             type:"GET",
             url:"loadSubjects.php",
@@ -44,7 +44,7 @@ require 'header.php';
         });
     });
     </script>
-    <script>
+<!--    <script>
     
     $(document).ready(function(){
         $("option").click(function(){
@@ -62,7 +62,7 @@ require 'header.php';
     });
     
     
-    </script>
+    </script>-->
     <body>
         <div class="down">
             <h1 style="text-align:right">
@@ -71,7 +71,7 @@ require 'header.php';
                 </div>
             </h1>
             
-            <div class="b2">
+<!--            <div class="b2">
                 <h2 style="text-align: right; float: right;">
                     الكليّة
                 
@@ -89,7 +89,7 @@ require 'header.php';
                 </h2>
                 
                 
-            </div>
+            </div>-->
             
         </div>
         <br><br><br><br><br>
