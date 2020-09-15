@@ -45,11 +45,11 @@ $res = mysqli_query($conn,$sql);
                             
                     echo '<i class="fas fa-reply rep" style="float:right;margin-left: 3%;color:black"></i>
                     <a class="Del" data-id='.$r["id"].' data-name='.$r["name"].'><i class="fas fa-trash-alt"  style="float:right;margin-left: 3%"></i></a>
-                    <i class="far fa-edit EDIT" style="float:right;margin-left: 3%"></i>
+                    <a class="EDIT" data-id='.$r["id"].' data-name='.$r["name"].'>     <i class="far fa-edit" style="float:right;margin-left: 3%"></i>      </a>
                 </div>
                 </div>
                 
-                <div class="ncomment ed ANY">
+                <div class="ncomment ed ANY '.$r["id"].' ">
                     <br>
                     <div class="uside">
                     <laber style="font-weight: bold;">Edit your comment : </laber>
@@ -57,12 +57,12 @@ $res = mysqli_query($conn,$sql);
                 </div>
                     
                     <div class="mainc">
-                        <textarea class="earea"></textarea>
+                        <textarea class="earea S'.$r["id"].'">'.htmlspecialchars($r["subject"]).'</textarea>
                     </div>
                     
                     <div class="rightc">
                     
-                        <button class="ebtn">Submit</button>
+                        <button data-id='.$r["id"].' class="ebtn UEDIT">Submit</button>
                 </div>
                 </div>
                 
