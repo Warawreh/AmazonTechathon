@@ -1,4 +1,7 @@
-
+html , body{
+    background-color: #f8f6e7;
+    font-family:'Tajwal',sans-serif;
+}
 .down{
     margin-top:5%;
     height:auto;

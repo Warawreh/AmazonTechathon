@@ -1,6 +1,7 @@
 <?php
-require 'includes/dbo.inc.php';
 
+require 'includes/dbo.inc.php';
+require 'scripts.php';
 if(isset($_GET['pid'])&&$_GET['pid']!="")$pageid=mysqli_real_escape_string($conn,$_GET['pid']);
 else $pageid="0";
 
@@ -12,10 +13,7 @@ $sql = " SELECT * FROM comments WHERE (place=0 AND pageid='$pageid') ORDER BY pl
 $res = mysqli_query($conn,$sql);
 
 //return to comments page if wrong page id
-if(!isset($coursename['name'])){
-    header("Location: commentMainPage.php");
-    exit;
-}
+
   echo '<h1 style="text-align: center">'.$coursename["name"].' Comments</h1>';
 
 // print all the comments (with edit/replty hidden boxes) 
@@ -39,8 +37,8 @@ if(!isset($coursename['name'])){
                     echo '<i class="fas fa-thumbs-up LIKE" style="float:right;margin-left: 3%;color:blue;">('.$r["likes"].')</i>';
                     
                             
-                    echo '<i class="far fa-reply rep" style="float:right;margin-left: 3%;color:black"></i>
-                    <i class="fas fa-trash-alt Del" style="float:right;margin-left: 3%"></i>
+                    echo '<i class="fas fa-reply rep" style="float:right;margin-left: 3%;color:black"></i>
+                    <a class="Del" data-id='.$r["id"].' data-name='.$r["name"].'><i class="fas fa-trash-alt"  style="float:right;margin-left: 3%"></i></a>
                     <i class="far fa-edit EDIT" style="float:right;margin-left: 3%"></i>
                 </div>
                 </div>
@@ -81,5 +79,4 @@ if(!isset($coursename['name'])){
                 </div>
     ';
   }
-  
-  
+?>

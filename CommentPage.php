@@ -1,14 +1,49 @@
+<?php
+
+require 'includes/dbo.inc.php';
+require 'scripts.php';
+if(isset($_GET['pid'])&&$_GET['pid']!="")$pageid=mysqli_real_escape_string($conn,$_GET['pid']);
+else $pageid="0";
+
+//searching for the pageid in db
+$sql="SELECT * FROM course WHERE id='$pageid';";
+$res = mysqli_query($conn,$sql);
+$coursename=mysqli_fetch_assoc($res);
+$sql = " SELECT * FROM comments WHERE (place=0 AND pageid='$pageid') ORDER BY place ASC , likes DESC ;";
+$res = mysqli_query($conn,$sql);
+
+//return to comments page if wrong page id
+if(!isset($coursename['name'])){
+    header("Location: commentMainPage.php");
+    exit;
+}?>
 <?php require 'header.php'; 
- require 'method.php';
+ setcookie("uname","Bahaa");
+//setcookie("uname","",time()-5000);
   ?>
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <head>
+            
+        <link rel="stylesheet" href="css/cmp.css" />   
         <link rel="stylesheet" href="css/commentStyle.css" />
         <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/phoneStyle.css" />
-        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 801px)" href="css/tablet.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+                integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+        
         <title>Discussion Page</title>
     </head>
     <script>
@@ -19,12 +54,13 @@
                 var n = $('#txt').val();
                 var u ="";
                 
-        
+                
 // see if someone logged in
                 <?php if (isset($_COOKIE["uname"])){
                 
                     $x=$_COOKIE["uname"]; ?>
                                 u= '<?php echo $x; ?>';
+                                
                                 console.log(u);
                 <?php } ?>
                     
@@ -76,7 +112,9 @@
            $('#txt').val('');
            $('.mainB').prop('disabled', true);
            <?php if(isset($_COOKIE["uname"])&& $_COOKIE["uname"]!="" ) { ?>
-                   $('txt').keyup(function(){
+                         
+                        $('#txt').keyup(function(){
+                            
                        if($.trim($('#txt').val()).replace(' ','') == ''){
                         $('.mainB').prop('disabled', true);
                         }else{
@@ -124,7 +162,7 @@
                     
                 
 
-
+<!--
                 
                 
                 <div class="ncomment mn">
@@ -192,7 +230,7 @@
                 </div>
                        
                     
-                
+                -->
 
                         
 
@@ -210,11 +248,11 @@
 
     <!-- THe submit form goes here -->
     <div class="sb">
-            <form method="POST" id="adding">
+            <form method="POST" id="adding" >
                         <label>
                             <h2 style="text-align:center">Add Comment</h2>
                             <textarea class="tsb" name="subject" id="txt"></textarea>
-                            <button class="bsb mainB">Add</button>
+                            <button class="bsb mainB" type="submit">Add</button>
                         </label>
                     </form>
                 
@@ -226,5 +264,5 @@
     
     
     
-    
+   <?php require 'footer.php'; ?> 
 </html>
