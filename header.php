@@ -18,6 +18,7 @@
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	<link rel="icon" href="img/web_icon.jpg">
 	<meta charset="UTF-8">
+  <title>University Student Assistant</title>
 	<link rel="stylesheet" href="css/header.css" type="text/css">
 </head>
 <header>
