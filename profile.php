@@ -110,16 +110,6 @@
         <div id="datahour">
           <span><?php echo $major_hourse - $finished; ?> : الساعات المتبقية</span>
         </div>
-        <?php
-          if($uname == $_COOKIE['uname']){
-            echo '
-
-            <form action="course_calculator.php" method="post">
-              <button type="submit" name="calc_course">Calc it</button>
-            </form>
-            ';
-          }
-         ?>
       </div>
     </div>
 
