@@ -104,10 +104,5 @@ require 'header.php';
     </body>
     
    <?php require 'footer.html'; ?>    
-    <style>
-        #footer{
-          margin-bottom: 2%;  
-        }
-        
-    </style>
+    
 </html>
