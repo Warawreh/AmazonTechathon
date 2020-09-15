@@ -33,17 +33,23 @@ $res = mysqli_query($conn,$sql);
                     <br>
                     <div class="rightc">';
  // Check if user already liked this (function liked)
-                    
-                    echo '<i class="fas fa-thumbs-up LIKE" style="float:right;margin-left: 3%;color:blue;">('.$r["likes"].')</i>';
-                    
+                if(liked($r['id'])==true){    
+                    echo '<a class="LIKE" data-id='.$r["id"].'>'
+                    . '<i id='.$r["id"].' class="fas fa-thumbs-up" style="float:right;margin-left: 3%;color:blue;">('.$r["likes"].')</i>'
+                            . '</a>';
+                }else{
+                    echo '<a class="LIKE" data-id='.$r["id"].'>'
+                            . '<i id='.$r["id"].' class="far fa-thumbs-up" style="float:right;margin-left: 3%;color:black;">('.$r["likes"].')</i>'
+                            . '</a>';
+                }
                             
                     echo '<i class="fas fa-reply rep" style="float:right;margin-left: 3%;color:black"></i>
                     <a class="Del" data-id='.$r["id"].' data-name='.$r["name"].'><i class="fas fa-trash-alt"  style="float:right;margin-left: 3%"></i></a>
-                    <i class="far fa-edit EDIT" style="float:right;margin-left: 3%"></i>
+                    <a class="EDIT" data-id='.$r["id"].' data-name='.$r["name"].'>     <i class="far fa-edit" style="float:right;margin-left: 3%"></i>      </a>
                 </div>
                 </div>
                 
-                <div class="ncomment ed ANY">
+                <div class="ncomment ed ANY '.$r["id"].' ">
                     <br>
                     <div class="uside">
                     <laber style="font-weight: bold;">Edit your comment : </laber>
@@ -51,12 +57,12 @@ $res = mysqli_query($conn,$sql);
                 </div>
                     
                     <div class="mainc">
-                        <textarea class="earea"></textarea>
+                        <textarea class="earea S'.$r["id"].'">'.htmlspecialchars($r["subject"]).'</textarea>
                     </div>
                     
                     <div class="rightc">
                     
-                        <button class="ebtn">Submit</button>
+                        <button data-id='.$r["id"].' class="ebtn UEDIT">Submit</button>
                 </div>
                 </div>
                 
@@ -78,5 +84,17 @@ $res = mysqli_query($conn,$sql);
                 </div>
                 </div>
     ';
+  }
+// find if user liked the comment before  
+  function liked($d){
+      require 'includes/dbo.inc.php';
+      if(!isset($_COOKIE['uname']) || $_COOKIE['uname'] =="")return false;
+      
+      $user_id=$_COOKIE['uname'];
+      $sql="SELECT * FROM likes WHERE (commentid='$d' AND userid='$user_id');";
+      $res= mysqli_query($conn, $sql);
+      $rows=mysqli_num_rows($res);
+      if($rows>0)return true;
+      else return false;
   }
 ?>
