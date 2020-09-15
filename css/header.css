@@ -3,6 +3,7 @@ body{
 	margin: 0;
   background-color: #f8f6e7;
 	font-family: 'Tajawal', sans-serif;
+	width: 100% !important;
 }
 header{
 	font-family: 'Tajawal', sans-serif;
