@@ -1,137 +1,93 @@
-body {
-	font-family: 'Tajawal', sans-serif;
+body{
+	width: 100vw;
 	padding: 0;
 	margin: 0;
-	width: 100vw;
+	color: #e2b62a;
+	font-weight: bold;
+  font-family: 'Tajawal', sans-serif !important;
 }
-#profile{
+h1{
+  text-align: center;
+	display: block;
+	margin: 0;
+	padding:0;
+	width: 100%;
+	padding-top:   3vh;
+	padding-bottom:3vh;
+}
+#signf{
+  direction: rtl;
+	margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 150px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 5vh;
+    width: 64vw;
+    background-image: url("../img/books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#infot{
+	background: rgba(0,0,0,0.5);
+	display: block;
+	padding-bottom: 5vh;
+}
+.dcon{
 	text-align: right;
-	margin-top: 100px;
-	margin-bottom: 150px;
+	padding: 50px 75px;
+	padding-bottom: 0px;
 }
-#uinfo{
-	display: grid;
-	margin-left: 4vw;
-	margin-right: 4vw;
-	/* border: solid 1px gray; */
-	border-radius: 10px;
-	width: 90vw;
-	height: 200px;
-	grid-template-areas:
-		"v u i"
-		"v u i"
-		"v u i"
-		"v u i";
-	grid-template-columns: auto auto 200px;
-	grid-template-rows: 50px 50px 50px 50px;
-	padding: 1%;
-	background-color: white;
+.dcon input{
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	border-width: 0px;
+	border-radius: 2px;
 }
-#uimge{
-	grid-area: i;
+.dcon div{font-size:17px;}
+.inlinedata1{
+	display:inline-block;
+    width: 20vw;
+    height: 30px;
+}
+.inlinedata2{
+	display:inline-block;
+	width: 100px;
+}
+.dcon button{
+    width: 130px;
+    height: 40px;
+}
+@media only screen and (max-width: 800px) {
+	#signf{
+		margin-left:  2vw;
+		margin-right: 2vw;
+		padding-left: 0vw;
+		padding-right:0vw;
+		padding-bottom: 3vh;
+		margin-top:   90px;
+		padding-top:   2vw;
+		width: 96vw;
+	}
+	h1{
+		width: 100%;
+		font-size:1.5em;
+	}
+	.dcon{
+		padding: 50px 2px;
+		padding-bottom: 0px;
+	}
+}
+
+#error{
+	margin-top: 5px;
 	text-align: center;
-	/* background-color: green; */
-}
-#udata{
-	padding-right: 50px;
 	font-size: 20px;
-	grid-area: u;
-	display: grid;
-	grid-template-areas:
-		"name"
-		"univ"
-		"prof"
-		"hour";
-		/* background-color: yellow; */
+	color: red;
 }
-#dataname{grid-area:name;}
-#datauniv{grid-area:univ;}
-#dataprof{grid-area:prof;}
-
-
-
-#datahour{
-	grid-area:hour;
-	font-size: 20px;
-	padding: 12.5px;
-}
-#void{
-	grid-area:v;
-	/* background-color: blue; */
-}
-#udata div{padding: 12.5px;}
-#ccon {
-	margin-left: 4vw;
-	margin-right: 4vw;
-	margin-top: 30px;
-	width: 90vw;
-	background-color: white;
-	/* border: solid 1px black; */
-	border-radius: 10px;
-	min-height: 500px;
-	padding: 1vw;
-	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: wrap;
-	justify-content: space-around ;
-	align-content:flex-start;
-}
-#ccon > div{
-    width: 15vw;
-    height: 8.5vh;
-    padding-top: 2vh;
-    display: inline-block;
-    background-color: white;
-		border-radius: 3px;
-    text-align: center;
-		font-size: 1.5vw !important;
-		padding: 3.2% 0.5%;
-		padding-top : 1.5%;
-    margin: 1vw;
-}
-
-.done:hover{
-	cursor: pointer;
-	background-color: #2fff83 !important;
-}
-
-.open:hover{
-	cursor: pointer;
-	background-color: #57cdf9 !important;
-}
-
-@media only screen and (max-width: 850px) {
-	#profile{
-		margin-top: 90px;
-	}
-	#ccon > div{
-		font-size: 15px !important;
-	}
-}
-
-@media only screen and (max-width: 760px) {
-	#ccon > div{
-		display: block;
- 		width: 88vw;
-		font-size: 20px;
-	}
-
-	#void{
-		margin-top: 20px !important;
-		padding-right: 50px;
-	}
-	#uinfo{
-		display: grid;
-		margin-left: 4vw;
-		margin-right: 4vw;
-		width: 92vw;
-		height: 500px;
-		grid-template-areas:
-			"i"
-			"u"
-			"v";
-		grid-template-columns: 92vw;
-		grid-template-rows: 200px 200px 200px;
-	/* background-color: red; */
-	}
+.dcon input{
+	/* background-color:red; */
 }
