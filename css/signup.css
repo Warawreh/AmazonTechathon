@@ -1,0 +1,137 @@
+body {
+	font-family: 'Tajawal', sans-serif;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+}
+#profile{
+	text-align: right;
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+#uinfo{
+	display: grid;
+	margin-left: 4vw;
+	margin-right: 4vw;
+	/* border: solid 1px gray; */
+	border-radius: 10px;
+	width: 90vw;
+	height: 200px;
+	grid-template-areas:
+		"v u i"
+		"v u i"
+		"v u i"
+		"v u i";
+	grid-template-columns: auto auto 200px;
+	grid-template-rows: 50px 50px 50px 50px;
+	padding: 1%;
+	background-color: white;
+}
+#uimge{
+	grid-area: i;
+	text-align: center;
+	/* background-color: green; */
+}
+#udata{
+	padding-right: 50px;
+	font-size: 20px;
+	grid-area: u;
+	display: grid;
+	grid-template-areas:
+		"name"
+		"univ"
+		"prof"
+		"hour";
+		/* background-color: yellow; */
+}
+#dataname{grid-area:name;}
+#datauniv{grid-area:univ;}
+#dataprof{grid-area:prof;}
+
+
+
+#datahour{
+	grid-area:hour;
+	font-size: 20px;
+	padding: 12.5px;
+}
+#void{
+	grid-area:v;
+	/* background-color: blue; */
+}
+#udata div{padding: 12.5px;}
+#ccon {
+	margin-left: 4vw;
+	margin-right: 4vw;
+	margin-top: 30px;
+	width: 90vw;
+	background-color: white;
+	/* border: solid 1px black; */
+	border-radius: 10px;
+	min-height: 500px;
+	padding: 1vw;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around ;
+	align-content:flex-start;
+}
+#ccon > div{
+    width: 15vw;
+    height: 8.5vh;
+    padding-top: 2vh;
+    display: inline-block;
+    background-color: white;
+		border-radius: 3px;
+    text-align: center;
+		font-size: 1.5vw !important;
+		padding: 3.2% 0.5%;
+		padding-top : 1.5%;
+    margin: 1vw;
+}
+
+.done:hover{
+	cursor: pointer;
+	background-color: #2fff83 !important;
+}
+
+.open:hover{
+	cursor: pointer;
+	background-color: #57cdf9 !important;
+}
+
+@media only screen and (max-width: 850px) {
+	#profile{
+		margin-top: 90px;
+	}
+	#ccon > div{
+		font-size: 15px !important;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	#ccon > div{
+		display: block;
+ 		width: 88vw;
+		font-size: 20px;
+	}
+
+	#void{
+		margin-top: 20px !important;
+		padding-right: 50px;
+	}
+	#uinfo{
+		display: grid;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		width: 92vw;
+		height: 500px;
+		grid-template-areas:
+			"i"
+			"u"
+			"v";
+		grid-template-columns: 92vw;
+		grid-template-rows: 200px 200px 200px;
+	/* background-color: red; */
+	}
+}
