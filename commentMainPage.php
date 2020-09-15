@@ -1,5 +1,6 @@
 <?php
 require 'header.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -91,6 +92,8 @@ require 'header.php';
         </div>
         <br><br><br><br><br>
         <div class="line"></div>
+        
+        
         <div class="btns SBlock">
             
         </div>
@@ -100,7 +103,11 @@ require 'header.php';
         
     </body>
     
-    
-    
-    <?php require 'footer.html'; ?>
+   <?php require 'footer.html'; ?>    
+    <style>
+        #footer{
+          margin-bottom: 2%;  
+        }
+        
+    </style>
 </html>

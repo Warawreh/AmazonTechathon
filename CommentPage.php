@@ -1,5 +1,4 @@
 <?php
-
 require 'includes/dbo.inc.php';
 require 'scripts.php';
 if(isset($_GET['pid'])&&$_GET['pid']!="")$pageid=mysqli_real_escape_string($conn,$_GET['pid']);
@@ -17,9 +16,7 @@ if(!isset($coursename['name'])){
     header("Location: commentMainPage.php");
     exit;
 }?>
-<?php require 'header.php'; 
- 
-  ?>
+<?php require 'header.php'; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -177,6 +174,10 @@ if(!isset($coursename['name'])){
     </body>
     
     
-    
-   <?php require 'footer.html'; ?> 
+    <?php require 'footer.html';  ?>
+    <style>
+        #footer{
+            margin-bottom : 2%;
+        }
+    </style>
 </html>
