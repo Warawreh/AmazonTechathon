@@ -174,3 +174,78 @@
         });
     });
 </script>
+<script>
+// show the reply box
+    $(document).ready(function(){
+        $(".rep").click(function(){
+// if logged-in           
+           <?php if(isset($_COOKIE["uname"]) && $_COOKIE["uname"]!=""){ ?> 
+            
+           var x=$(this).data('id');
+           var y=".R"+x;
+           var yy=".RS"+x;
+           if($(y).is(':visible')){
+               $(y).hide();
+           }else{
+               $(".ANY").hide();
+               $(y).show();
+               $(yy).focus();
+           }
+           <?php } ?>
+        });
+    });
+
+</script>
+<script>
+// submit a reply    
+    $(document).ready(function(){
+        $(".Repl").click(function(){
+           var x=$(this).data('id');
+           var xx=$(this).data('place');
+           var y=".R"+x;
+           var yy=".RS"+x;
+// username / pageid           
+           var u;
+            <?php if(isset($_COOKIE["uname"])){  $x=$_COOKIE["uname"];  ?>
+                 u = '<?php echo $x; ?>';
+                console.log(u);
+                    
+            <?php } ?>
+                
+            var p="0";
+            <?php 
+                if(isset($_GET['pid'])&&$_GET['pid']!=""){
+                $xx=$_GET['pid']; ?> 
+                p= '<?php echo $xx ;?> ';
+                console.log(p);
+             <?php } ?> 
+                 
+             var t=$(yy).val();
+             if($.trim(t).replace(' ','') !== ''){
+                 x=xx;
+                 $.ajax({
+                     type:"POST",
+                     url:"addComment.php",
+                     data:"p="+x+"&subject="+t+"&name="+u+"&pageid="+p,
+                     success: function(){
+// update the comments
+                     $.ajax({    
+                                type: "GET",
+                                url: "loadAllComments.php?pid="+p,             
+                                dataType: "html",                 
+                                success: function(response){                    
+                                $("#CommentsBlock").html(response);
+                                $(".ANY").hide();
+                            }
+
+                        });
+                     }
+                 });
+             }else{//empty reply
+                 alert("Add some text please");
+             }
+             $(y).hide();
+        });
+    });
+
+</script>

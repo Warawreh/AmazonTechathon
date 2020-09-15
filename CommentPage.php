@@ -40,7 +40,7 @@ if(!isset($coursename['name'])){
         <script type="text/javascript" src="js/jquery.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
         
         <title>Discussion Page</title>
@@ -156,91 +156,6 @@ if(!isset($coursename['name'])){
     <hr>
     <div class="down">
         <div  id="CommentsBlock">
-            
-                
-                    
-                
-
-<!--
-                
-                
-                <div class="ncomment mn">
-                    <br>
-                    <div class="uside">
-                    <laber style="font-weight: bold;">UserName : </laber>
-                    <div  class="w">
-                    dd/mm/yyyy hh:mm:ss
-                </div>
-                </div>
-                    
-                    <div class="mainc">
-                        welcom to the arabic site 
-                    </div>
-                    <br>
-                    <div class="rightc">
-                    
-                    <i class="fas fa-thumbs-up" style="float:right;margin-left: 3%">()</i>
-                    <i class="fas fa-reply" style="float:right;margin-left: 3%"></i>
-                    <i class="fas fa-trash-alt" style="float:right;margin-left: 3%"></i>
-                    <i class="far fa-edit" style="float:right;margin-left: 3%"></i>
-                </div>
-                </div>
-
-                
-                
-                
-                <div  class="rcomment re">
-                    <br>
-                    <div class="uside">
-                    <laber style="font-weight: bold;">UserName : </laber>
-                    <div class="w">
-                    dd/mm/yyyy hh:mm:ss
-                </div>
-                </div>
-                    
-                    <div class="mainc">
-                        welcom to the arabic site 
-                    </div>
-                    
-                    <div class="rightc">
-                    
-                    <i class="fas fa-thumbs-up" style="float:right;margin-left: 3%">(5)</i>
-                    <i class="fas fa-reply" style="float:right;margin-left: 3%"></i>
-                    <i class="fas fa-trash-alt" style="float:right;margin-left: 3%"></i>
-                    <i class="far fa-edit" style="float:right;margin-left: 3%"></i>
-                </div>
-                </div>
-
-                <div class="rcomment re">
-                    <br>
-                    <div class="uside">
-                    <laber style="font-weight: bold;">Replying to Username : </laber>
-                    
-                </div>
-                    
-                    <div class="mainc">
-                        <textarea class="earea"></textarea>
-                    </div>
-                    
-                    <div class="rightc">
-                    
-                        <button class="ebtn">Submit</button>
-                </div>
-                </div>
-                       
-                    
-                -->
-
-                        
-
-
-
-                   
-
-
-                       
-                            
-            
         </div>
     </div>
     <hr>
@@ -263,5 +178,5 @@ if(!isset($coursename['name'])){
     
     
     
-   <?php require 'footer.php'; ?> 
+   <?php require 'footer.html'; ?> 
 </html>

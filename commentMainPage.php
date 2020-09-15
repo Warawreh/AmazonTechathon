@@ -1,6 +1,5 @@
 <?php
 require 'header.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -103,5 +102,5 @@ require 'header.php';
     
     
     
-    
+    <?php require 'footer.html'; ?>
 </html>
