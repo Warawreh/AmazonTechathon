@@ -18,8 +18,7 @@ if(!isset($coursename['name'])){
     exit;
 }?>
 <?php require 'header.php'; 
- setcookie("uname","Bahaa");
-//setcookie("uname","",time()-5000);
+ 
   ?>
 <!DOCTYPE html>
 <html>
