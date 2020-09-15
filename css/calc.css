@@ -1,0 +1,102 @@
+#calc{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+#uinfo{
+	display: grid;
+	margin-left: 4vw;
+	margin-right: 4vw;
+	/* border: solid 1px gray; */
+	border-radius: 10px;
+	width: 90vw;
+	height: 200px;
+	grid-template-areas:
+		"v u i"
+		"v u i"
+		"v u i"
+		"v u i";
+	grid-template-columns: auto auto 200px;
+	grid-template-rows: 50px 50px 50px 50px;
+	padding: 1%;
+	margin-top : 100px;
+	background-color: white;
+}
+#uimge{
+	grid-area: i;
+	text-align: center;
+	/* background-color: green; */
+}
+#udata{
+	margin-top: 15px;
+	text-align: right;
+	padding-right: 50px;
+	font-size: 20px;
+	grid-area: u;
+	display: grid;
+	grid-template-areas:
+		"name"
+		"univ"
+		"prof"
+		"hour";
+		/* background-color: yellow; */
+}
+#dataname{grid-area:name;}
+#datauniv{grid-area:univ;}
+#dataprof{grid-area:prof;}
+
+#table{
+	margin-right: 4vw;
+	margin-left : 4vw;
+	margin-top: 50px;
+	width: 92vw;
+	text-align: center;
+	background-color: green;
+}
+.subpnt{grid-area:point;}
+.subnum{grid-area:subjnum;}
+.subnam{grid-area:subgnam;}
+.idnum {grid-area:id;}
+.element{
+	display: grid;
+	grid-template-areas:
+	"point subjnum subgnam id";
+	grid-template-rows: 50px;
+	grid-template-columns: 6vw 40vw 40vw 6vw;
+}
+.element div{padding-top:15px;}
+
+@media only screen and (max-width: 850px) {
+	#profile{
+		margin-top: 90px;
+	}
+	#ccon > div{
+		font-size: 15px !important;
+	}
+	#uinfo{margin-top: 90px;}
+	.idnum {display: none;}
+	.element{
+		display: grid;
+		grid-template-areas:
+		"point subjnum subgnam";
+		grid-template-rows: 70px;
+		grid-template-columns: 14vw 36vw 42vw;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	#uinfo{
+		display: grid;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		width: 92vw;
+		height: 500px;
+		grid-template-areas:
+			"i"
+			"u"
+			"v";
+		grid-template-columns: 92vw;
+		grid-template-rows: 200px 200px 200px;
+	/* background-color: red; */
+	}
+}
