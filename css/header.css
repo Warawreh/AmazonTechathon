@@ -1,4 +1,10 @@
 /*Removing all the decoration from links*/
+body{
+	margin: 0;
+  background-color: #f8f6e7;
+	font-family: 'Tajawal', sans-serif;
+	width: 100% !important;
+}
 header{
 	font-family: 'Tajawal', sans-serif;
 }
@@ -95,7 +101,6 @@ a {
     text-decoration: none;
     display: block;
     text-align: center;
-    direction: rtl;
 }
 #uinfo a{
 	display: inline-block;

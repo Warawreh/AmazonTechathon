@@ -84,3 +84,6 @@
 </body>
 </html>
 
+<?php
+require 'footer.html';
+?>

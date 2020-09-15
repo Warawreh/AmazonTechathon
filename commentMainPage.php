@@ -72,10 +72,11 @@ require 'header.php';
             </h1>
             
             <div class="b2">
-                <h2 style="text-align: right">
+                <h2 style="text-align: right; float: right;">
                     الكليّة
                 
                     <br>
+                    
                 <select id="se" class="sel">
                     <option data-id="" disabled selected>اختر كلية</option>
                     <option data-id="" id="firstChoice">عام</option>
@@ -84,6 +85,7 @@ require 'header.php';
                     <option data-id="med">الطب</option>
                     <option data-id="bus">الاعمال</option>
                 </select>
+                        
                 </h2>
                 
                 
@@ -104,10 +106,5 @@ require 'header.php';
     </body>
     
    <?php require 'footer.html'; ?>    
-    <style>
-        #footer{
-          margin-bottom: 2%;  
-        }
-        
-    </style>
+    
 </html>
