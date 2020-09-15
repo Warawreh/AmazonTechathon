@@ -40,7 +40,7 @@ if(!isset($coursename['name'])){
         <script type="text/javascript" src="js/jquery.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
         
         <title>Discussion Page</title>
@@ -263,5 +263,5 @@ if(!isset($coursename['name'])){
     
     
     
-   <?php require 'footer.php'; ?> 
+   <?php require 'footer.html'; ?> 
 </html>
