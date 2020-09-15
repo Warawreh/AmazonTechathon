@@ -82,7 +82,7 @@
       </br>
         تواصل مع طلاب اخرين من نفس جامعتك لمعرفة المزيد عن المواد واستفد من خبرات طلاب السنوات السابقة لمعرفة المواد التي تناسبك
       </br>
-      <a class="btn3" href="profile.php" style="color:white;cursor:pointer">
+      <a class="btn3" href="commentMainPage.php" style="color:white;cursor:pointer">
         ...المزيد
       </a>
       </span>
