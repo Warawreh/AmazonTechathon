@@ -23,3 +23,11 @@ the second form is for submitting majors which needs:
 - the major courses
 
 and after filling the data and submitting the data it will be saved in the database as a new major
+
+
+<h2>Discussion</h2>
+
+	To make the website better we added a discussion section in it , this way students can easily communicate with each other.
+
+	There is a comment area for each subject , you can enter it by going to 'Discussion/ناقش '  then choosing the subject you want to know more about , there you can ask questions , read previous opinions and discuss some with other students.
+

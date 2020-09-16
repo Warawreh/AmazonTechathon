@@ -1,3 +1,4 @@
+<!-- Calling the header -->
 <?php
   require 'header.php';
 ?>
@@ -14,6 +15,7 @@
   		<div id = "infot">
   			<div class="dcon">
           <div id="error">
+            <!-- The cases of sign in errors -->
             <?php
             if(isset($_GET['error'])){
               $er = $_GET['error'];
@@ -43,6 +45,7 @@
 		</div>
 	</div>
 </body>
+<!-- Calling the footer -->
 <?php
 require 'footer.html';
 ?>
