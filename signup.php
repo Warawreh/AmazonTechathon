@@ -69,10 +69,7 @@
           <div class="inlinedata2">اختر تخصصك</div>
       			<select name="umajor" class="inlinedata1">
         				<option>--Major--</option>
-        				<option>Computer Scince</option>
-       				<option>Computer Eng</option>
-       				<option>AI</option>
-        				<option>IT</option>
+        				<option>Computer Engineering</option>
       			</select>
   			</div>
   			<div class="dcon" style="text-align: center;">
