@@ -33,7 +33,7 @@ In profile page you can see all available courses for your major and university 
 You also can search for courses using search bars
 
 <h2>Course Suggestion</h2>
-This tool give the user the best courses to take in the current semester depending on the finished courses by this user 
+This tool give the user the best courses to take in the current semester depending on the finished courses by this user and the rating of another students, which will help the user to the best courses for this year Schedule 
 
 
 <h2>Discussion</h2>
