@@ -25,7 +25,7 @@ the second form is for submitting majors which needs:
 and after filling the data and submitting the data it will be saved in the database as a new major
 
 
-<h2>Discussion :</h2>
+<h2>Discussion</h2>
 
 	To make the website better we added a discussion section in it , this way students can easily communicate with each other.
 
