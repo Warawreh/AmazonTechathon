@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="css/index.css">
 
 <body style="margin:0px;">
+  <!-- calling the header file -->
   <?php
   require 'header.php';
-
   ?>
 
   <inside >
@@ -47,7 +47,7 @@
     </div>
     <img src="img/coursestrack.jpg" alt="" class="sideimg">
   </div>
-
+  <!-- This state panel will be improved to be auto updated -->
   <div class="stats">
     <div class="course-stat">
       <br><br><br><br>
@@ -92,24 +92,13 @@
 
   <br><br><br>
 </inside>
-
+  
+  <!-- calling the footer -->
   <?php
   require 'footer.html';
   ?>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <script type="text/javascript" src="helper/jquery.firefly-0.7.js"></script>
-<script>
-// $.firefly({
-//   color: '#b1d3f1',
-//   minPixel: 1,
-//   maxPixel: 5,
-//   total : 15,
-//   on: '#firefly'
-// });
-
-
-</script>
-
 
 </body>
