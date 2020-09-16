@@ -25,7 +25,12 @@ the second form is for submitting majors which needs:
 and after filling the data and submitting the data it will be saved in the database as a new major
 
 <h2>Profile Page</h2>
-In profile page 
+In profile page you can see all available courses for your major and university and then you can add or remove courses from finished courses and they will display with different colors :
+- Green if finished
+- Blue if not finished but available
+- Orange if not finished and not available
+
+You also can search for courses using search bars
 
 
 <h2>Discussion</h2>
