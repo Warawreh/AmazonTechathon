@@ -32,9 +32,12 @@ In profile page you can see all available courses for your major and university 
 
 You also can search for courses using search bars
 
+<h2>Course Suggestion</h2>
+This tool give the user the best courses to take in the current semester depending on the finished courses by this user 
+
 
 <h2>Discussion</h2>
 
-	To make the website better we added a discussion section in it , this way students can easily communicate with each other.
+To make the website better we added a discussion section in it , this way students can easily communicate with each other.
 
-	There is a comment area for each subject , you can enter it by going to 'Discussion/ناقش '  then choosing the subject you want to know more about , there you can ask questions , read previous opinions and discuss some with other students.
+There is a comment area for each subject , you can enter it by going to 'Discussion/ناقش '  then choosing the subject you want to know more about , there you can ask questions , read previous opinions and discuss some with other students.
