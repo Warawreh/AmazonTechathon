@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/index.css">
+<link rel="icon" href="img/web_icon.jpg">
 
 <body style="margin:0px;">
   <!-- calling the header file -->
@@ -92,7 +93,7 @@
 
   <br><br><br>
 </inside>
-  
+
   <!-- calling the footer -->
   <?php
   require 'footer.html';
