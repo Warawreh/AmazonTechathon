@@ -1,6 +1,6 @@
 <?php
 require 'header.php';
-
+$user_name = $_COOKIE['uname'];
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +44,22 @@ require 'header.php';
         });
     });
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".search").keyup(function(){
+                var x=$(this).val();
+                $.ajax({
+                    type:"GET",
+                    url:"loadSubjects.php?search="+x,
+                    dataType:"html",
+                    success:function(response){
+                        $(".SBlock").html(response);
+                    }
+                    
+                });
+            });
+        });
+</script>
 <!--    <script>
     
     $(document).ready(function(){
@@ -70,7 +86,7 @@ require 'header.php';
                     المواد الدراسية
                 </div>
             </h1>
-            
+            <input class="search" type="text" name="" value="" placeholder="ابحث بكتابة اسم او رقم المادة" style="text-align:right;width:60%;margin-bottom: 3%;margin-left: 20%;margin-top:2%;font-size:20px;direction : rtl;font-family: \'Tajawal\', sans-serif;">
 <!--            <div class="b2">
                 <h2 style="text-align: right; float: right;">
                     الكليّة
@@ -92,7 +108,7 @@ require 'header.php';
             </div>-->
             
         </div>
-        <br><br><br><br><br>
+        
         <div class="line"></div>
         
         
