@@ -51,13 +51,13 @@
   <div class="stats">
     <div class="course-stat">
       <br><br><br><br>
-      <span>10</span>
+      <span>94</span>
       <span>Courses</span>
     </div>
 
     <div class="major-stat">
       <br><br><br><br>
-      <span>10</span>
+      <span>1</span>
       <span>Majors</span>
     </div>
 
@@ -69,7 +69,7 @@
 
     <div class="user-stat">
       <br><br><br><br>
-      <span>10</span>
+      <span>4</span>
       <span>Students</span>
     </div>
   </div>
