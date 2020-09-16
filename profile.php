@@ -1,7 +1,5 @@
+<!-- Calling the header and checking if the user is signed in -->
   <?php
-  // error_reporting(E_ALL);
-  // ini_set('display_errors', '1');
-
   require 'header.php';
   require 'includes/dbo.inc.php';
 
@@ -15,7 +13,8 @@
   }
 
 
-  {//Get student finished courses
+  {
+  //Get student finished courses
     $done[] = array();
     $uname = $_GET['user'];
     $sql = "SELECT * FROM userinfo WHERE uname = ?";
@@ -36,7 +35,8 @@
     }
   }
 
-  {//find finished hours and courses
+  {
+  //find finished hours and courses
     $finished = 0;
     $arr = explode ("|", $row['courses']);
 
@@ -51,7 +51,6 @@
       $result = mysqli_stmt_get_result($stmt);
       $course_hour = [];
       while ($rows = mysqli_fetch_assoc($result)) {
-        // print_r($rows);
         $course_hour[$rows['id']] = $rows['hours'];
       }
 
@@ -66,7 +65,8 @@
     }
 
     $major_hourse = 0;
-    {//get major hourse
+    {
+    //get major hourse
       $sql = "SELECT * FROM major where name = ?";
       $stmt = mysqli_stmt_init($conn);
       if(!mysqli_stmt_prepare($stmt,$sql)){
@@ -77,7 +77,6 @@
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
         if ($rows = mysqli_fetch_assoc($result)) {
-          // print_r($rows);
           $major_hourse = $rows['hours'];
         }
       }
@@ -86,6 +85,7 @@
   }
 
  ?>
+ <!-- Getting the css for the profile -->
  <link rel="stylesheet" href="css/profile.css">
 
 <head>
@@ -101,6 +101,7 @@
         <img src="img/user_img.png" width="auto" height="100%" alt="">
       </div>
       <div id="udata">
+        <!-- Getting the user info and printing them -->
         <div id="dataname"><span><?php echo $row['uname']; ?> </span><span>: الطالب</span></div>
         <div id="datauniv"><span><?php echo $row['uuniversity']; ?> </span><span>: الجامعة</span></div>
         <div id="dataprof"><span><?php echo $row['umajor']; ?> </span><span>: النخصص</span></div>
@@ -160,7 +161,6 @@
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          // alert(document.getElementById("ccon").innerHTML);
           document.getElementById("ccon").innerHTML = this.responseText;
         }
       }
@@ -172,12 +172,10 @@
 
   function addcourse(){
     //arguments
-
     if (confirm("هل قمت باجتياز هذه المادة ؟")) {
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          // alert(document.getElementById("ccon").innerHTML);
           document.getElementById("ccon").innerHTML = this.responseText;
         }
       }
@@ -204,6 +202,7 @@
   }
 
 </script>
+<!-- Getting the footer -->
 <?php
 require 'footer.html';
 ?>
