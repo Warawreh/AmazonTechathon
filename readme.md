@@ -41,3 +41,10 @@ This tool gives the user the best courses to take in the current semester depend
 To make the website better we added a discussion section in it , this way students can easily communicate with each other.
 
 There is a comment area for each subject , you can enter it by going to 'Discussion/ناقش '  then choosing the subject you want to know more about , there you can ask questions , read previous opinions and discuss some with other students.
+
+
+<h2>Testing</h2>
+
+Because we couldn't put the website on a server , you can test it by importing the database 'unisa.sql' to your machine , the database has a sample of the information of the courses/majors and will enable you to experience every feature in the website.
+
+*NOTE : if you want to put the website in a server remember to edit the file that connects you with the database , the file is : includes/dbo.inc.php .
